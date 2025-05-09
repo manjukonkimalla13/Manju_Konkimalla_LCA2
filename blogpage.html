@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog page</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfaf6;
+}
+
+nav {
+  background-color: #fdf6ef;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #27a0ff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0a69c1;
+}
+
+.blogs-section {
+  background-color: #edf4c9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.blogs-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 800;
+  color: #111;
+}
+
+.blogs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-card h3 {
+  font-size: 1.1rem;
+  margin: 15px 20px 10px;
+  font-weight: 700;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  margin: 0 20px;
+  color: #444;
+}
+
+.signup-section {
+  background-color: #fdf6ef;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.signup-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.signup-section .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.signup-section .buttons button {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-section .buttons .light {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.signup-section .buttons .light:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.05);
+}
+
+.signup-section .buttons .dark {
+  background-color: #111;
+  color: #fff;
+  border: none;
+}
+
+.signup-section .buttons .dark:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+  </style>
+  </head>
+  <body>
+    <nav>
+      <a href="wellnesssite.html">Home</a>
+      <a href="shoppage.html">Shop</a>
+      <a href="reviewpage.html">Review</a>
+      <a href="blogpage.html">Blog</a>
+      <a href="contactpage.html">Contact</a>
+    </nav>
+    
+<div id="blogModal" class="modal">
+  <div class="modal-content blog-content">
+    <span class="close-blog-btn">&times;</span>
+    <h2 class="blog-title">FEATURED BLOGS</h2>
+
+    <div class="blog-grid">
+      
+      <div class="blog-card">
+        <img src="guthealth.png" alt="Gut Health">
+        <h3>Gut Health is the Real Glow-Up</h3>
+        <p>A healthy gut influences your energy, skin, mood, and more. Learn how herbs, prebiotics, and mindful eating can transform your overall wellness.</p>
+      </div>
+
+      
+      <div class="blog-card">
+        <img src="mindfulness.png" alt="Mindfulness">
+        <h3>5-Minute Mindfulness Rituals</h3>
+        <p>Short on time? These micro-rituals—like breathwork, grounding, and aromatherapy—help you reset within minutes.</p>
+      </div>
+
+   
+      <div class="blog-card">
+        <img src="naturalskincare.png" alt="Skincare">
+        <h3>Skincare Without Synthetics</h3>
+        <p>Learn about cruelty-free skincare and what ingredients to avoid in your daily products.</p>
+      </div>
+
+      
+      <div class="blog-card">
+        <img src="ashwagandhapowder.png" alt="Supplements">
+        <h3>6 Natural Supplements You Should Know About</h3>
+        <p>Support stress relief and digestion with Ashwagandha, Triphala, and more powerful herbs.</p>
+      </div>
+
+      
+      <div class="blog-card">
+        <img src="recoveryrituals.png" alt="Fitness">
+        <h3>Your Fitness Routine Needs Recovery Rituals</h3>
+        <p>Discover post-workout essentials like herbal balms, foam rolling, and magnesium baths.</p>
+      </div>
+
+      
+      <div class="blog-card">
+        <img src="selfcare.png" alt="Self Care">
+        <h3>How to Create a Holistic Self-Care Sunday</h3>
+        <p>Use detox teas, journaling, and calming music for body-mind alignment every weekend.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

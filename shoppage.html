@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Shop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: #e8f0b8;
+      color: #333;
+    }
+    nav {
+      background-color: #fff7f1;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 40px;
+      font-size: 14px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #00f;
+    }
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .section img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+    }
+    .content {
+      max-width: 400px;
+      margin: 20px;
+    }
+    .content h2 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    button {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+    .btn {
+      padding: 10px 15px;
+      background-color: white;
+      box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .signup {
+      background-color: #fff7f1;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .signup h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .signup .btn {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="wellnesssite.html">Home</a>
+      <a href="shoppage.html">Shop</a>
+      <a href="reviewpage.html">Review</a>
+      <a href="blogpage.html">Blog</a>
+      <a href="contactpage.html">Contact</a>
+  </nav>
+
+  <section class="section">
+    <img src="skincare.png" alt="Skincare & Bodycare">
+    <div class="content">
+      <h2>Skincare & Bodycare</h2>
+      <p>Nourish your skin with nature's finest.</p>
+      <a href="skincaree.html">See More</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="supplements.png" alt="Nutrition & Supplements">
+    <div class="content">
+      <h2>Nutrition & Supplements</h2>
+      <p>From superfoods to adaptogens, every formula supports inner vitality and balance.</p>
+      <a href="nutrition.html">See More</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="fitness.png" alt="Fitness & Movement">
+    <div class="content">
+      <h2>Fitness & Movement</h2>
+      <p>Move with purpose and mindfulness.</p>
+      <a href="fitnesss.html">See More</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="gifting kit.png" alt="Gifting & Wellness Kits">
+    <div class="content">
+      <h2>Gifting & Wellness Kits</h2>
+      <p>Share the gift of holistic health.</p>
+      <a href="gifting kit.png">See More</a>
+    </div>
+  </section>
+
+  <div class="signup">
+    <h2>Sign up today.</h2>
+    <button class="btn">Learn More</button>
+    <button class="btn" style="background-color: #111; color: white;">Get Started</button>
+  </div>
